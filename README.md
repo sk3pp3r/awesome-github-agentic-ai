@@ -1,102 +1,304 @@
-# awesome-github-agentic-ai
+# 🤖 Awesome GitHub Agentic AI
 
-> A curated list of delightful resources for **Agentic AI** development with GitHub Copilot — focused on the **GitHub Certified: Agentic AI Developer (GH-600)** exam.
+> **A curated list of resources for GitHub Certified: Agentic AI Developer (GH-600) 😎**
+> Level up your agent game. Build smarter. Ship faster. Stay accountable.
 
----
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+[![GitHub Stars](https://img.shields.io/github/stars/sk3pp3r/awesome-github-agentic-ai?style=flat-square&logo=github&color=7c3aed)](https://github.com/sk3pp3r/awesome-github-agentic-ai/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![GH-600](https://img.shields.io/badge/Exam-GH--600-blueviolet?style=flat-square&logo=github)](https://learn.microsoft.com/credentials/certifications/exams/gh-600/)
 
-## What is Agentic AI?
-
-Agentic AI refers to AI systems that can autonomously plan, reason, and execute multi-step tasks — going beyond simple code completion into full software-development workflows. GitHub Copilot's agentic capabilities enable AI-driven iteration, tool use, and end-to-end task completion inside your IDE and CI/CD pipeline.
-
----
-
-## ✨ GH-600 Overview
-
-The **GH-600: GitHub Certified: Agentic AI Developer** is a beta certification from GitHub/Microsoft focused on building, managing, and deploying agentic AI solutions with GitHub Copilot.
-
-> No official training path is currently available, but the resources below cover all major exam domains.
+<p align="center">
+  <img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="GitHub Certified: Agentic AI Developer" width="140"/>
+</p>
 
 ---
 
-## 1) Official Docs & Study
+## 🧠 What is GH-600?
 
-- [Microsoft Learn — GitHub Certified: Agentic AI Developer](https://learn.microsoft.com/credentials/certifications/github-copilot/) — official certification overview and resources.
-- [Exam GH-600 Landing Page](https://learn.microsoft.com/credentials/certifications/exams/gh-600/) — official exam page with skills measured.
-- [Exam GH-600 Study Guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600) — the primary prep resource; use the objective domains as your roadmap.
-- [GitHub Community — GH-600 Discussions](https://github.com/search?q=GH-600&type=discussions) — announcement trail, Q&A, and community insights.
-- [Microsoft Tech Community — GH-600 Posts](https://techcommunity.microsoft.com/search?query=GH-600) — official announcements and follow-up posts around the beta.
+The **GitHub Certified: Agentic AI Developer** (exam code **GH-600**) is the next-generation certification proving you can design, build, evaluate, and operate **autonomous AI agents** deeply embedded in the software development lifecycle.
 
----
+This isn't your grandpa's chatbot cert. 😤 GH-600 covers the full agentic stack:
 
-## 2) Learning & Courses
+- 🏗️ Architecting agents with clear goals, boundaries, and tool access
+- ⚡ Implementing tool use, API integrations, and environment interaction
+- 🧩 Managing memory, state, context windows, and execution flow
+- 📊 Evaluating agent quality, safety, latency, and cost — in CI/CD
+- 🕸️ Orchestrating multi-agent systems with roles, contracts, and protocols
+- 🛡️ Enforcing guardrails, human-in-the-loop, audit logs, and compliance
 
-- [Microsoft Learn / GitHub Certification Hub](https://learn.microsoft.com/credentials/certifications/) — official starting point for all GitHub certifications.
-- [GitHub Skills](https://skills.github.com/) — interactive, hands-on learning paths for GitHub features including Copilot.
-- [LinkedIn Learning — GitHub Copilot](https://www.linkedin.com/learning/search?keywords=github+copilot) — community and instructor-led content on Copilot workflows.
-- [Edureka — Agentic AI Engineering](https://www.edureka.co/) — third-party advanced training; search "Agentic AI Engineering" and verify alignment with GH-600 domains before enrolling.
-- [LinkedIn content search — GH-600 + Agentic AI](https://www.linkedin.com/search/results/content/?keywords=GH-600%20GitHub%20Copilot%20Agentic%20AI) — community posts covering prompting, RAG, agents, orchestration, and deployment.
+If you're serious about agentic AI engineering on GitHub — this list is your unfair advantage. 😎
 
 ---
 
-## 3) Labs & Hands-On Practice
+## 🗺️ Exam Blueprint
 
-- [GH-600 Study Guide — Objective Domains](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600) — use this as a hands-on build checklist; build something for each domain.
-- [GitHub Copilot Docs — Agent Mode](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide) — official reference for using Copilot in agentic/chat mode.
-- [GitHub Copilot Extensions](https://docs.github.com/en/copilot/building-copilot-extensions) — build custom Copilot agents and tools.
-- [GitHub Actions + Copilot](https://docs.github.com/en/actions) — automate agentic workflows in CI/CD pipelines.
-- [GitHub Community — GH-600 Context](https://github.com/search?q=GH-600&type=discussions) — community threads on building and managing AI agents in software-dev workflows.
+| # | Domain | Weight |
+|---|--------|--------|
+| 1 | 🏗️ Prepare Agent Architecture & SDLC Processes | 15–20% |
+| 2 | 🔧 Implement Tool Use & Environment Interaction | 20–25% |
+| 3 | 🧠 Manage Memory, State & Execution | 10–15% |
+| 4 | 📊 Perform Evaluation, Error Analysis & Tuning | 15–20% |
+| 5 | 🕸️ Orchestrate Multi-Agent Coordination | 15–20% |
+| 6 | 🛡️ Implement Guardrails & Accountability | 10–15% |
 
----
-
-## 4) Video Resources
-
-- [YouTube — GitHub Copilot Agentic AI (search)](https://www.youtube.com/results?search_query=GitHub+Copilot+agentic+AI+GH-600) — community and conference talks; use as supplemental material.
-- [Microsoft Learn — GitHub Copilot videos](https://learn.microsoft.com/en-us/shows/browse?terms=github+copilot) — official Microsoft-produced content on Copilot features.
-
-> No verified official YouTube playlist for GH-600 exists at this time. Check the official certification page for updates.
+> 💡 **Tip:** Domain 2 (Tool Use) carries the most weight at 20–25%. Nail tool schemas, secrets management, and idempotency.
 
 ---
 
-## 5) Community & Social
+## 📚 Official Study Resources
 
-- [LinkedIn — Agentic AI Developer Certification (search)](https://www.linkedin.com/search/results/content/?keywords=GitHub%20Certified%20Agentic%20AI%20Developer%20GH-600) — rollout context, tips, and community experiences.
-- [GitHub Community — GH-600 Threads](https://github.com/search?q=GH-600&type=discussions) — announcement and Q&A trail from the beta launch.
-- [GitHub Copilot Changelog](https://github.blog/changelog/label/copilot/) — stay current on new Copilot agentic features.
-- [GitHub Blog — Copilot](https://github.blog/tag/github-copilot/) — product announcements and engineering deep-dives.
+> Start here. No shortcuts.
+
+- 🎯 [Microsoft Learn — GitHub Certifications Hub](https://learn.microsoft.com/credentials/certifications/github-copilot/) — The mothership. All GitHub certs in one place.
+- 📋 [Exam GH-600 Page](https://learn.microsoft.com/credentials/certifications/exams/gh-600/) — Register, review skills measured, download the study guide.
+- 📖 [GH-600 Official Study Guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600) — The definitive objective-by-objective breakdown. Read it twice.
+- 📣 [Microsoft Tech Community Announcement](https://techcommunity.microsoft.com/blog/skills-hub-blog/new-github-certified-agentic-ai-developer/4517571) — The official launch post with context on why this cert exists.
+- 💬 [GitHub Community Discussions — GH-600](https://github.com/search?q=GH-600&type=discussions) — Real talk from folks prepping for the exam. Bookmark it.
 
 ---
 
-## 6) Key Concepts to Master
+## 🎓 Microsoft Learn Modules (Self-Paced)
 
-Based on the GH-600 study guide objective domains:
+> Free. Official. Exam-aligned. No excuses.
 
-| Domain | Topics |
-|--------|--------|
-| **Agentic AI Fundamentals** | Agent architecture, planning, tool use, multi-step reasoning |
-| **GitHub Copilot Agent Mode** | IDE integration, context windows, instruction files, custom instructions |
-| **Copilot Extensions** | Building agents, GitHub App model, Skills API |
-| **Prompt Engineering** | System prompts, few-shot, chain-of-thought, RAG patterns |
-| **Responsible AI** | Content filters, trust boundaries, auditability, human-in-the-loop |
-| **CI/CD & Automation** | GitHub Actions integration, automated code review, agentic pipelines |
+- 🤖 [Foundations of Agentic AI in GitHub](https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/) — Core concepts: what agents are, how they reason, plan, and act within GitHub workflows.
+- 🏗️ [Designing Agent Architecture and SDLC Integration](https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/) — Covers Domain 1 deeply. Agent goals, task decomposition, model selection, SDLC workflows.
+- 🔧 [Tooling, MCP, and Agent Execution Environments](https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/) — Tool schemas, MCP protocol, safe execution, secrets, side effects.
+
+---
+
+## 🏗️ Domain Deep-Dives
+
+> Know your domains cold. Here's the full breakdown of what's actually tested.
+
+---
+
+### Domain 1 — Prepare Agent Architecture & SDLC Processes (15–20%) 🏗️
+
+**What you need to know:**
+
+- 🎯 Define agent goals, roles, and operational boundaries
+- 🔀 Decompose complex tasks into agent-executable sub-tasks
+- 🧩 Choose the right models, tools, and data sources for the job
+- 📐 Design SDLC workflows that integrate agents at the right points
+- 📌 Version prompts, tools, and configurations like any other code artifact
+
+**Key Artifacts:**
+
+| Artifact | Purpose |
+|----------|---------|
+| Architecture diagrams | Visualize agent topology and data flow |
+| Agent spec (YAML/JSON) | Define roles, goals, constraints, tool access |
+| Workflow & quality gates | Embed agents into CI/CD with approval steps |
+| Risk assessment | Identify failure modes before they hit prod |
+
+**GitHub Features to Know:**
+`Projects` · `README / ADRs` · `CODEOWNERS` · `Milestones`
+
+---
+
+### Domain 2 — Implement Tool Use & Environment Interaction (20–25%) 🔧
+
+**What you need to know:**
+
+- 📝 Design and implement tool schemas (JSON Schema — be precise)
+- 🔒 Enable safe tool execution (sandboxing, input validation, output sanitization)
+- 🔗 Integrate agents with APIs, databases, CLIs, and file systems
+- 🤫 Manage secrets securely — never hardcode, always rotate
+- ♻️ Handle side effects and ensure idempotency for retryable operations
+
+**Key Artifacts:**
+
+| Artifact | Purpose |
+|----------|---------|
+| Tool schemas (JSON) | Machine-readable tool contracts for agents |
+| Connector code | Actual integrations to external systems |
+| Environment configs | Per-environment secrets, vars, and feature flags |
+| Secrets management | Vault strategies, GitHub Secrets, OIDC |
+
+**GitHub Features to Know:**
+`Actions` · `Secrets & Variables` · `Environments` · `Packages`
+
+---
+
+### Domain 3 — Manage Memory, State & Execution (10–15%) 🧠
+
+**What you need to know:**
+
+- 🗃️ Choose memory strategies: episodic, semantic, or hybrid — and when each applies
+- 💾 Persist and retrieve state reliably across agent runs
+- 📏 Manage context windows — trim, summarize, compress without losing signal
+- ⏸️ Enable checkpoints and resumption for long-running agentic tasks
+- 🎲 Ensure determinism where it matters (avoid flaky agent behavior)
+
+**Key Artifacts:**
+
+| Artifact | Purpose |
+|----------|---------|
+| Memory design doc | Strategy for episodic vs. semantic vs. hybrid |
+| State schemas | Typed definitions of what gets persisted |
+| Storage configs | Database/vector store/cache configuration |
+| Checkpoint strategy | How and when to snapshot agent state |
+
+**GitHub Features to Know:**
+`Artifacts` · `Cache` · `Releases` · `Discussions`
+
+---
+
+### Domain 4 — Perform Evaluation, Error Analysis & Tuning (15–20%) 📊
+
+**What you need to know:**
+
+- 🧪 Build evaluation datasets and test harnesses for your agents
+- 📐 Define metrics across four axes: quality, safety, latency, cost
+- 🤖 Run automated evals in CI/CD — every PR, every deploy
+- 🔍 Analyze errors and failure modes systematically (not just vibes)
+- 🔄 Tune prompts, tools, and models iteratively based on eval data
+
+**Key Artifacts:**
+
+| Artifact | Purpose |
+|----------|---------|
+| Eval datasets | Ground truth pairs for automated scoring |
+| Test harnesses | Frameworks that run evals and assert thresholds |
+| Metrics & reports | Dashboards showing quality/safety/latency/cost |
+| Tuning logs | Experiment tracking for prompt/tool changes |
+
+**GitHub Features to Know:**
+`Actions (CI)` · `Code Scanning` · `Pages (Reports)` · `Pull Requests`
+
+---
+
+### Domain 5 — Orchestrate Multi-Agent Coordination (15–20%) 🕸️
+
+**What you need to know:**
+
+- 🎭 Design agent roles, contracts, and interaction protocols
+- 🔀 Coordinate via workflows and events (not spaghetti message passing)
+- 📡 Master communication patterns: plan, debate, delegate, critique
+- ⚖️ Resolve conflicts and aggregate results from multiple agents
+- 🔭 Monitor and trace multi-agent behavior end-to-end
+
+**Key Artifacts:**
+
+| Artifact | Purpose |
+|----------|---------|
+| Agent contracts | Formal definitions of agent capabilities/interfaces |
+| Orchestration flows | Workflow diagrams showing agent coordination |
+| Communication logs | Structured logs of inter-agent messages |
+| Trace visualizations | Spans and traces for debugging multi-agent flows |
+
+**GitHub Features to Know:**
+`Actions (Workflows)` · `Events (Webhooks)` · `Artifacts` · `Projects`
+
+---
+
+### Domain 6 — Implement Guardrails & Accountability (10–15%) 🛡️
+
+**What you need to know:**
+
+- 🚧 Implement content safety and policy guardrails (input and output)
+- 🔐 Enforce least privilege — agents only get what they need
+- 👤 Add human-in-the-loop for high-risk or irreversible actions
+- 📝 Audit, log, and trace every decision an agent makes
+- ✅ Ensure compliance with data governance and regulatory requirements
+
+**Key Artifacts:**
+
+| Artifact | Purpose |
+|----------|---------|
+| Guardrail policies | Rules for what agents can/cannot do or say |
+| Risk levels & rules | Tiered risk classification for actions |
+| Audit logs | Immutable record of agent decisions and actions |
+| Compliance mapping | Traceability to regulatory frameworks |
+
+**GitHub Features to Know:**
+`CODEOWNERS` · `Branch Protection` · `Audit Log` · `Dependabot`
+
+---
+
+## 🛠️ Labs & Hands-On Practice
+
+> Theory is nice. Building stuff is how you actually learn. 😤
+
+- 🎮 [GitHub Skills](https://skills.github.com/) — Interactive, repo-based learning tracks. Build real workflows, get automated feedback.
+- 📘 [GitHub Copilot Docs](https://docs.github.com/en/copilot) — Full documentation for GitHub Copilot, including agent mode, custom instructions, and workspace features.
+- 🔌 [GitHub Copilot Extensions](https://docs.github.com/en/copilot/building-copilot-extensions) — Build your own Copilot extensions. Perfect for practicing tool schemas and agent integration patterns.
+- ⚡ [GitHub Actions Docs](https://docs.github.com/en/actions) — Master the workflow engine that powers agent orchestration, CI/CD evals, and automated deployment.
+
+### 🎯 Hands-On Build Checklist
+
+Use the GH-600 study guide objective domains as your checklist. For each domain, build a small working artifact:
+
+- [ ] **Domain 1**: Write an agent spec (YAML) for a code review agent. Include goals, tool access, and boundaries.
+- [ ] **Domain 2**: Implement a tool with a valid JSON Schema definition. Call it from a GitHub Action.
+- [ ] **Domain 3**: Build a simple state persistence mechanism using GitHub Artifacts and Cache.
+- [ ] **Domain 4**: Create an eval harness for a Copilot extension. Define at least 3 metrics.
+- [ ] **Domain 5**: Design a 2-agent orchestration flow using GitHub Actions workflows and webhooks.
+- [ ] **Domain 6**: Add a content safety guardrail and a human approval gate to a GitHub Actions workflow.
+
+---
+
+## 🌐 Community & Social
+
+> Don't study alone. The agentic AI community is loud, helpful, and building cool stuff. 🤝
+
+- 🔴 [Reddit — r/AzureCertification GH-600 Thread](https://www.reddit.com/r/AzureCertification/comments/1td90hq/gh600_new_github_certified_agentic_ai_developer/) — Community discussion on the new cert. Exam experiences, prep tips, study group coordination.
+- 💼 [LinkedIn — Microsoft Learn Announcement](https://www.linkedin.com/posts/microsoftlearn_were-introducing-a-new-github-certified-activity-7460713084647804928-_wqQ/) — Official launch post with context and industry reactions.
+- 🐦 [X/Twitter — Microsoft Learn Announcement](https://x.com/MicrosoftLearn/status/2054969993410818299) — Short-form updates and community reactions.
+- 📰 [GitHub Blog — Copilot Tag](https://github.blog/tag/github-copilot/) — Official GitHub engineering blog. Deep dives on Copilot features, agentic capabilities, and new integrations.
+- 📋 [GitHub Copilot Changelog](https://github.blog/changelog/label/copilot/) — Every Copilot feature release, documented. Stay current.
+- 💬 [GitHub Community Discussions](https://github.com/orgs/community/discussions) — The official GitHub community. Ask questions, share projects, find study partners.
+
+---
+
+## 📺 Video Resources
+
+> Watch people build things. Then build things. 🎬
+
+- ▶️ [YouTube — GitHub Copilot Agentic AI](https://www.youtube.com/results?search_query=GitHub+Copilot+agentic+AI+GH-600) — Search results for GH-600 and agentic AI content. New videos dropping regularly.
+- 🎙️ [Microsoft Learn Shows — GitHub Copilot](https://learn.microsoft.com/en-us/shows/browse?terms=github+copilot) — Official Microsoft Learn video content. Structured, exam-relevant, free.
 
 ---
 
 ## ✅ Best Starting Points
 
-1. [Exam GH-600 Study Guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600) — start here
-2. [Official Certification Page](https://learn.microsoft.com/credentials/certifications/github-copilot/) — overview and registration
-3. [GitHub Skills](https://skills.github.com/) — hands-on labs
-4. [GitHub Copilot Docs](https://docs.github.com/en/copilot) — reference during practice
-5. [Microsoft Tech Community — GH-600 Feed](https://techcommunity.microsoft.com/search?query=GH-600) — latest announcements
+> New here? Don't know where to begin? Here's your ordered attack plan. 😎
+
+1. 📋 **Read the [Official Study Guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600)** — Understand every objective before touching anything else. Print it. Annotate it.
+2. 🎓 **Complete the [3 Microsoft Learn Modules](#-microsoft-learn-modules-self-paced)** — Official, exam-aligned, free. Build the mental model.
+3. 🏗️ **Study the [Domain Deep-Dives](#-domain-deep-dives)** — Know the key topics, artifacts, and GitHub features cold for each domain.
+4. 🛠️ **Do the [Hands-On Build Checklist](#-hands-on-build-checklist)** — Build one artifact per domain. Learning by doing > passive reading.
+5. 💬 **Join the [Community](#-community--social)** — Reddit thread, GitHub Discussions. Find others prepping. Share what you build.
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-Pull requests welcome! Please ensure all links are verified, content is relevant to GH-600 or agentic AI development with GitHub Copilot, and no paywalled resources are listed without a clear note.
+Contributions are welcome and encouraged! 🙌
+
+If you know of a high-quality resource — blog post, video, tool, template, or community thread — that belongs in this list:
+
+1. Fork this repo
+2. Add your resource in the appropriate section (keep it relevant to GH-600 domains)
+3. Open a Pull Request with a brief description of why it belongs here
+
+**Ground rules:**
+- Only include resources directly relevant to the GH-600 exam domains
+- No low-quality content (LinkedIn slideshows, AI-generated fluff, etc.)
+- Broken links will be removed — PRs to fix them are especially welcome
+- Be excellent to each other 🤝
 
 ---
 
-## License
+## 📄 License
 
-[MIT](LICENSE)
+[MIT](LICENSE) — Free to use, share, and remix. Just keep it awesome. 😎
+
+---
+
+<p align="center">
+  Built with 😎 for the GitHub Agentic AI community<br/>
+  <strong>Go build something that thinks for itself.</strong> 🤖
+</p>

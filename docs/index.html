@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome GitHub Agentic AI — GH-600 Study Hub 🤖</title>
+  <meta name="description" content="The ultimate curated resource hub for GitHub Certified: Agentic AI Developer (GH-600). Exam blueprint, study modules, labs, and community." />
+  <meta property="og:title" content="Awesome GitHub Agentic AI — GH-600 Study Hub" />
+  <meta property="og:description" content="Everything you need to pass the GitHub Certified: Agentic AI Developer exam (GH-600)." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-primary:    #0d1117;
+      --bg-secondary:  #161b22;
+      --bg-tertiary:   #21262d;
+      --bg-card:       #1c2128;
+      --border:        #30363d;
+      --border-muted:  #21262d;
+      --text-primary:  #e6edf3;
+      --text-secondary:#8b949e;
+      --text-muted:    #6e7681;
+      --purple:        #7c3aed;
+      --purple-light:  #a78bfa;
+      --purple-dim:    #3b1f6e;
+      --blue:          #2563eb;
+      --blue-light:    #60a5fa;
+      --blue-dim:      #1e3a5f;
+      --green:         #22c55e;
+      --green-light:   #4ade80;
+      --green-dim:     #14532d;
+      --yellow:        #eab308;
+      --yellow-light:  #fde047;
+      --yellow-dim:    #713f12;
+      --orange:        #f97316;
+      --orange-light:  #fb923c;
+      --orange-dim:    #7c2d12;
+      --red:           #ef4444;
+      --red-light:     #f87171;
+      --red-dim:       #7f1d1d;
+      --radius-sm:     6px;
+      --radius:        12px;
+      --radius-lg:     20px;
+      --shadow-glow-purple: 0 0 40px rgba(124,58,237,0.15);
+      --shadow-card:   0 4px 24px rgba(0,0,0,0.4);
+      --transition:    0.2s ease;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.2;
+    }
+
+    a { color: var(--purple-light); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: #fff; }
+
+    code, .mono {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 0.85em;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    /* ============================================================
+       SCROLLBAR
+    ============================================================ */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+    ::-webkit-scrollbar-thumb { background: var(--purple-dim); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--purple); }
+
+    /* ============================================================
+       NAV
+    ============================================================ */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 17, 23, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+      background: var(--bg-tertiary);
+    }
+
+    .nav-star {
+      background: var(--purple-dim);
+      color: var(--purple-light) !important;
+      border: 1px solid var(--purple);
+      border-radius: var(--radius-sm);
+      padding: 0.35rem 0.9rem !important;
+      font-weight: 600 !important;
+    }
+
+    .nav-star:hover {
+      background: var(--purple) !important;
+      color: #fff !important;
+    }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124,58,237,0.25) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 100%, rgba(34,197,94,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 20% 80%, rgba(37,99,235,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--purple-dim);
+      border: 1px solid var(--purple);
+      color: var(--purple-light);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #e6edf3 0%, #a78bfa 50%, #60a5fa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      padding: 0.2rem 1rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-secondary);
+      max-width: 620px;
+      margin: 0 auto 2.5rem;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all var(--transition);
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--purple);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(124,58,237,0.4);
+    }
+
+    .btn-primary:hover {
+      background: #6d28d9;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(124,58,237,0.6);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--border);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--purple-light);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ============================================================
+       SECTION WRAPPER
+    ============================================================ */
+    section {
+      padding: 5rem 2rem;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--purple-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-sub {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 600px;
+      line-height: 1.65;
+      margin-bottom: 3rem;
+    }
+
+    /* ============================================================
+       DOMAIN CARDS
+    ============================================================ */
+    #blueprint { background: var(--bg-secondary); }
+
+    .domains-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .domain-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .domain-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .domain-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      border-radius: var(--radius) 0 0 var(--radius);
+    }
+
+    .domain-card.d1::before { background: var(--purple); }
+    .domain-card.d2::before { background: var(--blue); }
+    .domain-card.d3::before { background: var(--green); }
+    .domain-card.d4::before { background: var(--yellow); }
+    .domain-card.d5::before { background: var(--orange); }
+    .domain-card.d6::before { background: var(--red); }
+
+    .domain-card.d1:hover { border-color: var(--purple); box-shadow: 0 4px 24px rgba(124,58,237,0.2); }
+    .domain-card.d2:hover { border-color: var(--blue); box-shadow: 0 4px 24px rgba(37,99,235,0.2); }
+    .domain-card.d3:hover { border-color: var(--green); box-shadow: 0 4px 24px rgba(34,197,94,0.2); }
+    .domain-card.d4:hover { border-color: var(--yellow); box-shadow: 0 4px 24px rgba(234,179,8,0.2); }
+    .domain-card.d5:hover { border-color: var(--orange); box-shadow: 0 4px 24px rgba(249,115,22,0.2); }
+    .domain-card.d6:hover { border-color: var(--red); box-shadow: 0 4px 24px rgba(239,68,68,0.2); }
+
+    .domain-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .domain-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .d1 .domain-num { background: var(--purple-dim); color: var(--purple-light); }
+    .d2 .domain-num { background: var(--blue-dim); color: var(--blue-light); }
+    .d3 .domain-num { background: var(--green-dim); color: var(--green-light); }
+    .d4 .domain-num { background: var(--yellow-dim); color: var(--yellow-light); }
+    .d5 .domain-num { background: var(--orange-dim); color: var(--orange-light); }
+    .d6 .domain-num { background: var(--red-dim); color: var(--red-light); }
+
+    .domain-title-block {
+      flex: 1;
+    }
+
+    .domain-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+      margin-bottom: 0.3rem;
+    }
+
+    .domain-weight {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      display: inline-block;
+    }
+
+    .d1 .domain-weight { background: var(--purple-dim); color: var(--purple-light); }
+    .d2 .domain-weight { background: var(--blue-dim); color: var(--blue-light); }
+    .d3 .domain-weight { background: var(--green-dim); color: var(--green-light); }
+    .d4 .domain-weight { background: var(--yellow-dim); color: var(--yellow-light); }
+    .d5 .domain-weight { background: var(--orange-dim); color: var(--orange-light); }
+    .d6 .domain-weight { background: var(--red-dim); color: var(--red-light); }
+
+    .domain-icon {
+      font-size: 1.3rem;
+    }
+
+    .domain-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .domain-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .domain-bullets li::before {
+      content: '›';
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 0.05rem;
+    }
+
+    .d1 .domain-bullets li::before { color: var(--purple-light); }
+    .d2 .domain-bullets li::before { color: var(--blue-light); }
+    .d3 .domain-bullets li::before { color: var(--green-light); }
+    .d4 .domain-bullets li::before { color: var(--yellow-light); }
+    .d5 .domain-bullets li::before { color: var(--orange-light); }
+    .d6 .domain-bullets li::before { color: var(--red-light); }
+
+    .domain-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding-top: 0.25rem;
+      border-top: 1px solid var(--border-muted);
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-tertiary);
+      color: var(--text-muted);
+      border: 1px solid var(--border-muted);
+    }
+
+    /* ============================================================
+       LEARN MODULES
+    ============================================================ */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .module-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .module-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--purple), var(--blue));
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .module-card:hover {
+      border-color: var(--purple);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(124,58,237,0.15);
+    }
+
+    .module-card:hover::after {
+      opacity: 1;
+    }
+
+    .module-icon {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .module-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .module-card p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .module-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: var(--purple-dim);
+      color: var(--purple-light);
+      border: 1px solid var(--purple);
+      border-radius: var(--radius-sm);
+      padding: 0.45rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all var(--transition);
+      align-self: flex-start;
+    }
+
+    .module-link:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* ============================================================
+       RESOURCE LINKS
+    ============================================================ */
+    .resources-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .resource-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem;
+      transition: all var(--transition);
+    }
+
+    .resource-item:hover {
+      border-color: var(--purple);
+      background: var(--bg-tertiary);
+      transform: translateX(4px);
+    }
+
+    .resource-emoji {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      width: 2rem;
+      text-align: center;
+    }
+
+    .resource-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .resource-title {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .resource-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .resource-arrow {
+      color: var(--text-muted);
+      transition: color var(--transition), transform var(--transition);
+      font-size: 1.1rem;
+    }
+
+    .resource-item:hover .resource-arrow {
+      color: var(--purple-light);
+      transform: translateX(3px);
+    }
+
+    /* ============================================================
+       COMMUNITY GRID
+    ============================================================ */
+    #community { background: var(--bg-secondary); }
+
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .community-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: all var(--transition);
+      text-decoration: none;
+    }
+
+    .community-card:hover {
+      border-color: var(--purple);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-glow-purple);
+    }
+
+    .community-icon {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .community-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .community-card p {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .community-cta {
+      font-size: 0.8rem;
+      color: var(--purple-light);
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       LABS GRID
+    ============================================================ */
+    .labs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .lab-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: all var(--transition);
+    }
+
+    .lab-card:hover {
+      border-color: var(--green);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(34,197,94,0.1);
+    }
+
+    .lab-icon {
+      font-size: 1.8rem;
+    }
+
+    .lab-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .lab-card p {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      flex: 1;
+      line-height: 1.55;
+    }
+
+    .lab-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--green-light);
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: color var(--transition);
+      align-self: flex-start;
+    }
+
+    .lab-link:hover { color: var(--green); }
+
+    /* ============================================================
+       CHECKLIST
+    ============================================================ */
+    .checklist {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .check-box {
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition);
+      cursor: pointer;
+    }
+
+    .checklist li:hover .check-box {
+      border-color: var(--purple);
+    }
+
+    .check-domain {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: var(--purple-light);
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      margin-top: 3px;
+    }
+
+    /* ============================================================
+       START HERE
+    ============================================================ */
+    #start { background: var(--bg-secondary); }
+
+    .start-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      counter-reset: steps;
+    }
+
+    .start-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      position: relative;
+      transition: all var(--transition);
+      counter-increment: steps;
+    }
+
+    .start-card::before {
+      content: counter(steps);
+      position: absolute;
+      top: -1px;
+      right: 1rem;
+      background: var(--purple);
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 0.75rem;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .start-card:hover {
+      border-color: var(--purple);
+      box-shadow: var(--shadow-glow-purple);
+      transform: translateY(-2px);
+    }
+
+    .start-icon { font-size: 1.6rem; }
+
+    .start-card h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    .start-card p {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      flex: 1;
+      line-height: 1.55;
+    }
+
+    .start-card a {
+      font-size: 0.8rem;
+      color: var(--purple-light);
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       VIDEO SECTION
+    ============================================================ */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .video-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      transition: all var(--transition);
+    }
+
+    .video-card:hover {
+      border-color: var(--red);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(239,68,68,0.1);
+    }
+
+    .video-thumb {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-sm);
+      background: var(--red-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+
+    .video-info h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+      line-height: 1.4;
+    }
+
+    .video-info p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    .video-link {
+      font-size: 0.8rem;
+      color: var(--red-light);
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       CTA BANNER
+    ============================================================ */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--purple-dim) 0%, var(--blue-dim) 100%);
+      border: 1px solid var(--purple);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 3rem 0 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(124,58,237,0.15), transparent);
+      pointer-events: none;
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .cta-banner p {
+      color: var(--text-secondary);
+      margin-bottom: 1.75rem;
+      font-size: 1rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .footer-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .footer-tagline {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color var(--transition);
+    }
+
+    .footer-links a:hover { color: var(--purple-light); }
+
+    .footer-divider {
+      width: 1px;
+      height: 1rem;
+      background: var(--border);
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       MISC UTILITIES
+    ============================================================ */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1rem; }
+      .nav-links { display: none; }
+      section { padding: 3.5rem 1.25rem; }
+      .two-col { grid-template-columns: 1fr; }
+      .hero { min-height: 75vh; padding: 4rem 1.25rem 3rem; }
+      .hero-stats { gap: 1.5rem; }
+    }
+
+    /* ============================================================
+       SCROLL ANIMATION
+    ============================================================ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Blinking cursor in hero */
+    .cursor {
+      display: inline-block;
+      width: 3px;
+      height: 0.85em;
+      background: var(--purple-light);
+      border-radius: 2px;
+      vertical-align: middle;
+      animation: blink 1s step-end infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* Gradient animated border on hero badge */
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav>
+    <a href="#" class="nav-logo">🤖 Awesome GH-600</a>
+    <ul class="nav-links">
+      <li><a href="#blueprint">Exam Blueprint</a></li>
+      <li><a href="#learn">Learn</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#labs">Labs</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="https://github.com/sk3pp3r/awesome-github-agentic-ai" target="_blank" rel="noopener" class="nav-star">⭐ Star on GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span>🤖</span> GitHub Certification
+      </div>
+      <h1>GitHub Certified:<br/>Agentic AI Developer<span class="cursor"></span></h1>
+      <div class="hero-badge">GH-600 😎</div>
+      <p>
+        Everything you need to master agentic AI engineering on GitHub —
+        agent architecture, tool use, memory, evaluation, multi-agent orchestration,
+        and guardrails. One curated list to rule them all.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600" target="_blank" rel="noopener" class="btn btn-primary">
+          📖 Official Study Guide
+        </a>
+        <a href="https://github.com/sk3pp3r/awesome-github-agentic-ai" target="_blank" rel="noopener" class="btn btn-secondary">
+          ⭐ GitHub Page
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Exam Domains</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Learn Modules</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Curated Resources</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Things to Build</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       EXAM BLUEPRINT
+  ============================================================ -->
+  <section id="blueprint">
+    <div class="container">
+      <div class="section-label">🗺️ Exam Blueprint</div>
+      <h2 class="section-title">Know What You're Fighting For</h2>
+      <p class="section-sub">
+        GH-600 covers 6 domains. Know the weights. Know the key topics.
+        Build something in each one. That's the formula. 😤
+      </p>
+      <div class="domains-grid">
+
+        <!-- Domain 1 -->
+        <div class="domain-card d1 fade-in">
+          <div class="domain-header">
+            <div class="domain-num">1</div>
+            <div class="domain-title-block">
+              <div class="domain-name">🏗️ Prepare Agent Architecture &amp; SDLC Processes</div>
+              <span class="domain-weight">15–20%</span>
+            </div>
+          </div>
+          <ul class="domain-bullets">
+            <li>Define agent goals, roles, and operational boundaries</li>
+            <li>Decompose complex tasks into agent-executable sub-tasks</li>
+            <li>Choose the right models, tools, and data sources</li>
+            <li>Design SDLC workflows with agents at the right touchpoints</li>
+            <li>Version prompts, tools, and configurations like code</li>
+          </ul>
+          <div class="domain-tags">
+            <span class="tag">Projects</span>
+            <span class="tag">README / ADRs</span>
+            <span class="tag">CODEOWNERS</span>
+            <span class="tag">Milestones</span>
+          </div>
+        </div>
+
+        <!-- Domain 2 -->
+        <div class="domain-card d2 fade-in">
+          <div class="domain-header">
+            <div class="domain-num">2</div>
+            <div class="domain-title-block">
+              <div class="domain-name">🔧 Implement Tool Use &amp; Environment Interaction</div>
+              <span class="domain-weight">20–25%</span>
+            </div>
+          </div>
+          <ul class="domain-bullets">
+            <li>Design and implement tool schemas (JSON Schema — be precise)</li>
+            <li>Enable safe tool execution: sandboxing, validation, sanitization</li>
+            <li>Integrate with APIs, databases, CLIs, and file systems</li>
+            <li>Manage secrets securely — never hardcode, always rotate</li>
+            <li>Handle side effects and ensure idempotency</li>
+          </ul>
+          <div class="domain-tags">
+            <span class="tag">Actions</span>
+            <span class="tag">Secrets &amp; Variables</span>
+            <span class="tag">Environments</span>
+            <span class="tag">Packages</span>
+          </div>
+        </div>
+
+        <!-- Domain 3 -->
+        <div class="domain-card d3 fade-in">
+          <div class="domain-header">
+            <div class="domain-num">3</div>
+            <div class="domain-title-block">
+              <div class="domain-name">🧠 Manage Memory, State &amp; Execution</div>
+              <span class="domain-weight">10–15%</span>
+            </div>
+          </div>
+          <ul class="domain-bullets">
+            <li>Choose episodic, semantic, or hybrid memory strategies</li>
+            <li>Persist and retrieve state reliably across agent runs</li>
+            <li>Manage context windows — trim, summarize, compress</li>
+            <li>Enable checkpoints and resumption for long-running tasks</li>
+            <li>Ensure determinism to avoid flaky agent behavior</li>
+          </ul>
+          <div class="domain-tags">
+            <span class="tag">Artifacts</span>
+            <span class="tag">Cache</span>
+            <span class="tag">Releases</span>
+            <span class="tag">Discussions</span>
+          </div>
+        </div>
+
+        <!-- Domain 4 -->
+        <div class="domain-card d4 fade-in">
+          <div class="domain-header">
+            <div class="domain-num">4</div>
+            <div class="domain-title-block">
+              <div class="domain-name">📊 Perform Evaluation, Error Analysis &amp; Tuning</div>
+              <span class="domain-weight">15–20%</span>
+            </div>
+          </div>
+          <ul class="domain-bullets">
+            <li>Build evaluation datasets and test harnesses for agents</li>
+            <li>Define metrics: quality, safety, latency, and cost</li>
+            <li>Run automated evals in CI/CD — every PR, every deploy</li>
+            <li>Analyze errors and failure modes systematically</li>
+            <li>Tune prompts, tools, and models iteratively</li>
+          </ul>
+          <div class="domain-tags">
+            <span class="tag">Actions (CI)</span>
+            <span class="tag">Code Scanning</span>
+            <span class="tag">Pages</span>
+            <span class="tag">Pull Requests</span>
+          </div>
+        </div>
+
+        <!-- Domain 5 -->
+        <div class="domain-card d5 fade-in">
+          <div class="domain-header">
+            <div class="domain-num">5</div>
+            <div class="domain-title-block">
+              <div class="domain-name">🕸️ Orchestrate Multi-Agent Coordination</div>
+              <span class="domain-weight">15–20%</span>
+            </div>
+          </div>
+          <ul class="domain-bullets">
+            <li>Design agent roles, contracts, and interaction protocols</li>
+            <li>Coordinate via workflows and events — not spaghetti</li>
+            <li>Master patterns: plan, debate, delegate, critique</li>
+            <li>Resolve conflicts and aggregate results across agents</li>
+            <li>Monitor and trace multi-agent behavior end-to-end</li>
+          </ul>
+          <div class="domain-tags">
+            <span class="tag">Actions (Workflows)</span>
+            <span class="tag">Webhooks</span>
+            <span class="tag">Artifacts</span>
+            <span class="tag">Projects</span>
+          </div>
+        </div>
+
+        <!-- Domain 6 -->
+        <div class="domain-card d6 fade-in">
+          <div class="domain-header">
+            <div class="domain-num">6</div>
+            <div class="domain-title-block">
+              <div class="domain-name">🛡️ Implement Guardrails &amp; Accountability</div>
+              <span class="domain-weight">10–15%</span>
+            </div>
+          </div>
+          <ul class="domain-bullets">
+            <li>Implement content safety and policy guardrails</li>
+            <li>Enforce least privilege — agents only get what they need</li>
+            <li>Add human-in-the-loop for high-risk or irreversible actions</li>
+            <li>Audit, log, and trace every decision an agent makes</li>
+            <li>Ensure compliance with data governance requirements</li>
+          </ul>
+          <div class="domain-tags">
+            <span class="tag">CODEOWNERS</span>
+            <span class="tag">Branch Protection</span>
+            <span class="tag">Audit Log</span>
+            <span class="tag">Dependabot</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       LEARN MODULES
+  ============================================================ -->
+  <section id="learn">
+    <div class="container">
+      <div class="section-label">🎓 Microsoft Learn</div>
+      <h2 class="section-title">Official Self-Paced Modules</h2>
+      <p class="section-sub">
+        Free. Official. Exam-aligned. These 3 modules are your foundation.
+        Complete them before anything else. No shortcuts.
+      </p>
+      <div class="modules-grid">
+
+        <div class="module-card fade-in">
+          <div class="module-icon">🤖</div>
+          <h3>Foundations of Agentic AI in GitHub</h3>
+          <p>
+            Core concepts: what agents are, how they reason, plan, and act
+            within GitHub workflows. Build the mental model first.
+          </p>
+          <a href="https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/" target="_blank" rel="noopener" class="module-link">
+            Start Module →
+          </a>
+        </div>
+
+        <div class="module-card fade-in">
+          <div class="module-icon">🏗️</div>
+          <h3>Designing Agent Architecture and SDLC Integration</h3>
+          <p>
+            Covers Domain 1 deeply. Agent goals, task decomposition, model
+            selection, SDLC workflow design, and versioning strategies.
+          </p>
+          <a href="https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/" target="_blank" rel="noopener" class="module-link">
+            Start Module →
+          </a>
+        </div>
+
+        <div class="module-card fade-in">
+          <div class="module-icon">🔧</div>
+          <h3>Tooling, MCP, and Agent Execution Environments</h3>
+          <p>
+            Tool schemas, MCP protocol, safe execution environments,
+            secrets management, side effects, and idempotency patterns.
+          </p>
+          <a href="https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/" target="_blank" rel="noopener" class="module-link">
+            Start Module →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       OFFICIAL RESOURCES
+  ============================================================ -->
+  <section id="resources" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-label">📚 Official Resources</div>
+      <h2 class="section-title">Start Here. No Shortcuts.</h2>
+      <p class="section-sub">
+        The definitive official links — certification page, exam registration,
+        the study guide, and community discussion threads.
+      </p>
+      <div class="resources-list">
+
+        <a href="https://learn.microsoft.com/credentials/certifications/github-copilot/" target="_blank" rel="noopener" class="resource-item">
+          <span class="resource-emoji">🎯</span>
+          <div class="resource-content">
+            <div class="resource-title">Microsoft Learn — GitHub Certifications Hub</div>
+            <div class="resource-desc">learn.microsoft.com/credentials/certifications/github-copilot/</div>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+
+        <a href="https://learn.microsoft.com/credentials/certifications/exams/gh-600/" target="_blank" rel="noopener" class="resource-item">
+          <span class="resource-emoji">📋</span>
+          <div class="resource-content">
+            <div class="resource-title">Exam GH-600 Official Page</div>
+            <div class="resource-desc">Register, review skills measured, download the study guide PDF</div>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+
+        <a href="https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600" target="_blank" rel="noopener" class="resource-item">
+          <span class="resource-emoji">📖</span>
+          <div class="resource-content">
+            <div class="resource-title">GH-600 Official Study Guide</div>
+            <div class="resource-desc">The definitive objective-by-objective breakdown. Read it twice.</div>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+
+        <a href="https://techcommunity.microsoft.com/blog/skills-hub-blog/new-github-certified-agentic-ai-developer/4517571" target="_blank" rel="noopener" class="resource-item">
+          <span class="resource-emoji">📣</span>
+          <div class="resource-content">
+            <div class="resource-title">Microsoft Tech Community Announcement</div>
+            <div class="resource-desc">Official launch post with context on why this cert exists</div>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+
+        <a href="https://github.com/search?q=GH-600&type=discussions" target="_blank" rel="noopener" class="resource-item">
+          <span class="resource-emoji">💬</span>
+          <div class="resource-content">
+            <div class="resource-title">GitHub Community Discussions — GH-600</div>
+            <div class="resource-desc">Real talk from folks prepping for the exam</div>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       LABS
+  ============================================================ -->
+  <section id="labs">
+    <div class="container">
+      <div class="section-label">🛠️ Labs &amp; Hands-On</div>
+      <h2 class="section-title">Build Your Way to Cert-Ready</h2>
+      <p class="section-sub">
+        Theory is nice. Building stuff is how you actually learn.
+        Use these resources to create real artifacts for each domain. 😤
+      </p>
+      <div class="labs-grid">
+
+        <div class="lab-card fade-in">
+          <div class="lab-icon">🎮</div>
+          <h3>GitHub Skills</h3>
+          <p>
+            Interactive, repo-based learning tracks. Build real workflows,
+            get automated feedback, earn completion badges.
+          </p>
+          <a href="https://skills.github.com/" target="_blank" rel="noopener" class="lab-link">Go to GitHub Skills →</a>
+        </div>
+
+        <div class="lab-card fade-in">
+          <div class="lab-icon">📘</div>
+          <h3>GitHub Copilot Docs</h3>
+          <p>
+            Full documentation for GitHub Copilot — agent mode, custom instructions,
+            workspace features, and extension development.
+          </p>
+          <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener" class="lab-link">Read the Docs →</a>
+        </div>
+
+        <div class="lab-card fade-in">
+          <div class="lab-icon">🔌</div>
+          <h3>GitHub Copilot Extensions</h3>
+          <p>
+            Build your own Copilot extensions. Perfect for practicing tool
+            schemas, agent integration patterns, and GitHub App auth.
+          </p>
+          <a href="https://docs.github.com/en/copilot/building-copilot-extensions" target="_blank" rel="noopener" class="lab-link">Build Extensions →</a>
+        </div>
+
+        <div class="lab-card fade-in">
+          <div class="lab-icon">⚡</div>
+          <h3>GitHub Actions Docs</h3>
+          <p>
+            Master the workflow engine that powers agent orchestration,
+            CI/CD evals, automated deployment, and event-driven coordination.
+          </p>
+          <a href="https://docs.github.com/en/actions" target="_blank" rel="noopener" class="lab-link">Learn Actions →</a>
+        </div>
+
+      </div>
+
+      <!-- Build Checklist -->
+      <div style="margin-top: 2.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">🎯 Hands-On Build Checklist</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.25rem;">
+          For each domain, build one real artifact. This is the hands-on equivalent of the study guide objectives.
+        </p>
+        <ul class="checklist">
+          <li>
+            <div class="check-box" onclick="this.innerHTML = this.innerHTML ? '' : '✓'; this.style.borderColor = this.innerHTML ? 'var(--purple)' : ''; this.style.color = 'var(--purple-light)';" title="Click to check off"></div>
+            <span class="check-domain">D1</span>
+            <span>Write an agent spec (YAML) for a code review agent. Include goals, tool access list, and operational boundaries.</span>
+          </li>
+          <li>
+            <div class="check-box" onclick="this.innerHTML = this.innerHTML ? '' : '✓'; this.style.borderColor = this.innerHTML ? 'var(--blue)' : ''; this.style.color = 'var(--blue-light)';" title="Click to check off"></div>
+            <span class="check-domain" style="color: var(--blue-light);">D2</span>
+            <span>Implement a tool with a valid JSON Schema definition. Call it from a GitHub Action using environment secrets.</span>
+          </li>
+          <li>
+            <div class="check-box" onclick="this.innerHTML = this.innerHTML ? '' : '✓'; this.style.borderColor = this.innerHTML ? 'var(--green)' : ''; this.style.color = 'var(--green-light)';" title="Click to check off"></div>
+            <span class="check-domain" style="color: var(--green-light);">D3</span>
+            <span>Build a simple state persistence mechanism using GitHub Artifacts and Cache across workflow runs.</span>
+          </li>
+          <li>
+            <div class="check-box" onclick="this.innerHTML = this.innerHTML ? '' : '✓'; this.style.borderColor = this.innerHTML ? 'var(--yellow)' : ''; this.style.color = 'var(--yellow-light)';" title="Click to check off"></div>
+            <span class="check-domain" style="color: var(--yellow-light);">D4</span>
+            <span>Create an eval harness for a Copilot extension. Define at least 3 metrics (quality, safety, latency) with threshold assertions.</span>
+          </li>
+          <li>
+            <div class="check-box" onclick="this.innerHTML = this.innerHTML ? '' : '✓'; this.style.borderColor = this.innerHTML ? 'var(--orange)' : ''; this.style.color = 'var(--orange-light)';" title="Click to check off"></div>
+            <span class="check-domain" style="color: var(--orange-light);">D5</span>
+            <span>Design a 2-agent orchestration flow using GitHub Actions workflows and webhooks. Document the communication contracts.</span>
+          </li>
+          <li>
+            <div class="check-box" onclick="this.innerHTML = this.innerHTML ? '' : '✓'; this.style.borderColor = this.innerHTML ? 'var(--red)' : ''; this.style.color = 'var(--red-light)';" title="Click to check off"></div>
+            <span class="check-domain" style="color: var(--red-light);">D6</span>
+            <span>Add a content safety guardrail and a human approval gate (environment protection rule) to a GitHub Actions workflow.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       COMMUNITY
+  ============================================================ -->
+  <section id="community">
+    <div class="container">
+      <div class="section-label">🌐 Community &amp; Social</div>
+      <h2 class="section-title">Don't Study Alone</h2>
+      <p class="section-sub">
+        The agentic AI community is loud, helpful, and building cool stuff.
+        Get plugged in. Share what you build. Find study partners. 🤝
+      </p>
+      <div class="community-grid">
+
+        <a href="https://www.reddit.com/r/AzureCertification/comments/1td90hq/gh600_new_github_certified_agentic_ai_developer/" target="_blank" rel="noopener" class="community-card">
+          <div class="community-icon">🔴</div>
+          <h3>Reddit — r/AzureCertification</h3>
+          <p>Community discussion on GH-600. Exam experiences, prep tips, and study group coordination.</p>
+          <span class="community-cta">Join the thread →</span>
+        </a>
+
+        <a href="https://www.linkedin.com/posts/microsoftlearn_were-introducing-a-new-github-certified-activity-7460713084647804928-_wqQ/" target="_blank" rel="noopener" class="community-card">
+          <div class="community-icon">💼</div>
+          <h3>LinkedIn — Microsoft Learn</h3>
+          <p>Official launch announcement with context and industry reactions from the Microsoft Learn team.</p>
+          <span class="community-cta">See the post →</span>
+        </a>
+
+        <a href="https://x.com/MicrosoftLearn/status/2054969993410818299" target="_blank" rel="noopener" class="community-card">
+          <div class="community-icon">🐦</div>
+          <h3>X / Twitter — Microsoft Learn</h3>
+          <p>Short-form updates, community reactions, and quick links to new resources as they drop.</p>
+          <span class="community-cta">See the post →</span>
+        </a>
+
+        <a href="https://github.blog/tag/github-copilot/" target="_blank" rel="noopener" class="community-card">
+          <div class="community-icon">📰</div>
+          <h3>GitHub Blog — Copilot</h3>
+          <p>Official GitHub engineering blog. Deep dives on Copilot features, agentic capabilities, and new integrations.</p>
+          <span class="community-cta">Read the blog →</span>
+        </a>
+
+        <a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noopener" class="community-card">
+          <div class="community-icon">📋</div>
+          <h3>GitHub Copilot Changelog</h3>
+          <p>Every Copilot feature release, documented. Stay current on what agents can do today vs. last month.</p>
+          <span class="community-cta">Track changes →</span>
+        </a>
+
+        <a href="https://github.com/orgs/community/discussions" target="_blank" rel="noopener" class="community-card">
+          <div class="community-icon">💬</div>
+          <h3>GitHub Community Discussions</h3>
+          <p>The official GitHub community. Ask questions, share projects, get feedback from real practitioners.</p>
+          <span class="community-cta">Join discussions →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       VIDEO
+  ============================================================ -->
+  <section id="video">
+    <div class="container">
+      <div class="section-label">📺 Video Resources</div>
+      <h2 class="section-title">Watch. Then Build.</h2>
+      <p class="section-sub">
+        Watch people build agentic systems. Then build them yourself.
+        That's the only way this sticks. 🎬
+      </p>
+      <div class="video-grid">
+
+        <div class="video-card fade-in">
+          <div class="video-thumb">▶️</div>
+          <div class="video-info">
+            <h3>YouTube — GitHub Copilot Agentic AI</h3>
+            <p>Community and official content on GH-600 and agentic AI. New videos dropping regularly.</p>
+            <a href="https://www.youtube.com/results?search_query=GitHub+Copilot+agentic+AI+GH-600" target="_blank" rel="noopener" class="video-link">Search on YouTube →</a>
+          </div>
+        </div>
+
+        <div class="video-card fade-in">
+          <div class="video-thumb">🎙️</div>
+          <div class="video-info">
+            <h3>Microsoft Learn Shows — GitHub Copilot</h3>
+            <p>Official Microsoft-produced video content on Copilot. Structured, exam-relevant, free.</p>
+            <a href="https://learn.microsoft.com/en-us/shows/browse?terms=github+copilot" target="_blank" rel="noopener" class="video-link">Browse Shows →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       START HERE
+  ============================================================ -->
+  <section id="start">
+    <div class="container">
+      <div class="section-label">✅ Best Starting Points</div>
+      <h2 class="section-title">Your Ordered Attack Plan</h2>
+      <p class="section-sub">
+        New here? Don't know where to begin? Follow these 5 steps in order.
+        No analysis paralysis. Just execute. 😎
+      </p>
+      <div class="start-grid">
+
+        <div class="start-card fade-in">
+          <div class="start-icon">📖</div>
+          <h3>Read the Official Study Guide</h3>
+          <p>Understand every objective before touching anything else. Print it. Annotate it. Know it cold.</p>
+          <a href="https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600" target="_blank" rel="noopener">Open Study Guide →</a>
+        </div>
+
+        <div class="start-card fade-in">
+          <div class="start-icon">🎓</div>
+          <h3>Complete the 3 Learn Modules</h3>
+          <p>Official, exam-aligned, free. Build the mental model before you start building artifacts.</p>
+          <a href="#learn">Go to Modules →</a>
+        </div>
+
+        <div class="start-card fade-in">
+          <div class="start-icon">🏗️</div>
+          <h3>Study the Domain Deep-Dives</h3>
+          <p>Know the key topics, artifacts, and GitHub features cold for all 6 domains.</p>
+          <a href="#blueprint">Go to Blueprint →</a>
+        </div>
+
+        <div class="start-card fade-in">
+          <div class="start-icon">🛠️</div>
+          <h3>Do the Build Checklist</h3>
+          <p>Build one real artifact per domain. Learning by doing beats passive reading every time.</p>
+          <a href="#labs">Go to Labs →</a>
+        </div>
+
+        <div class="start-card fade-in">
+          <div class="start-icon">💬</div>
+          <h3>Join the Community</h3>
+          <p>Reddit thread, GitHub Discussions. Find others prepping. Share what you build. Get feedback.</p>
+          <a href="#community">Go to Community →</a>
+        </div>
+
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner fade-in">
+        <h2>🚀 Ready to Get Certified?</h2>
+        <p>Register for GH-600 on Microsoft Learn. Schedule your exam. Go build something that thinks for itself.</p>
+        <div class="hero-ctas">
+          <a href="https://learn.microsoft.com/credentials/certifications/exams/gh-600/" target="_blank" rel="noopener" class="btn btn-primary">
+            🎯 Register for GH-600
+          </a>
+          <a href="https://github.com/sk3pp3r/awesome-github-agentic-ai" target="_blank" rel="noopener" class="btn btn-secondary">
+            ⭐ Star this Repo
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">🤖 Awesome GitHub Agentic AI</div>
+      <div class="footer-tagline">Built with 😎 for the GitHub Agentic AI community</div>
+      <div class="footer-links">
+        <a href="https://github.com/sk3pp3r/awesome-github-agentic-ai" target="_blank" rel="noopener">GitHub</a>
+        <div class="footer-divider"></div>
+        <a href="https://learn.microsoft.com/credentials/certifications/exams/gh-600/" target="_blank" rel="noopener">GH-600 Exam</a>
+        <div class="footer-divider"></div>
+        <a href="https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600" target="_blank" rel="noopener">Study Guide</a>
+        <div class="footer-divider"></div>
+        <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener">Copilot Docs</a>
+        <div class="footer-divider"></div>
+        <a href="https://github.com/orgs/community/discussions" target="_blank" rel="noopener">Community</a>
+      </div>
+      <div class="footer-copy">
+        MIT License &nbsp;·&nbsp; Go build something that thinks for itself. 🤖
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JS — Scroll animations
+  ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      // Intersection Observer for fade-in animations
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+      );
+
+      document.querySelectorAll('.fade-in').forEach(function (el) {
+        observer.observe(el);
+      });
+
+      // Smooth active nav link highlighting
+      var sections = document.querySelectorAll('section[id]');
+      var navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+      function updateActiveLink() {
+        var scrollY = window.scrollY + 80;
+        sections.forEach(function (section) {
+          var top = section.offsetTop;
+          var height = section.offsetHeight;
+          var id = section.getAttribute('id');
+          if (scrollY >= top && scrollY < top + height) {
+            navLinks.forEach(function (link) {
+              link.style.color = '';
+              link.style.background = '';
+              if (link.getAttribute('href') === '#' + id) {
+                link.style.color = 'var(--text-primary)';
+                link.style.background = 'var(--bg-tertiary)';
+              }
+            });
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink, { passive: true });
+      updateActiveLink();
+    })();
+  </script>
+
+</body>
+</html>
