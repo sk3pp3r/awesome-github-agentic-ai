@@ -250,6 +250,7 @@ Use the GH-600 study guide objective domains as your checklist. For each domain,
 - 📰 [GitHub Blog — Copilot Tag](https://github.blog/tag/github-copilot/) - Official GitHub engineering blog. Deep dives on Copilot features, agentic capabilities, and new integrations.
 - 📋 [GitHub Copilot Changelog](https://github.blog/changelog/label/copilot/) - Every Copilot feature release, documented. Stay current.
 - 💬 [GitHub Community Discussions](https://github.com/orgs/community/discussions) - The official GitHub community. Ask questions, share projects, find study partners.
+- 📗 [GH-600 Apuntes en español (Matías Beltramone)](https://github.com/matiasbeltramone/gh-600-apuntes) - Free, didactic **Spanish-language** study notes covering all six domains with hands-on labs, learning-in-public style. Full notes at [matiasbeltramone.com](https://matiasbeltramone.com/apuntes/github-agentic-ai/). **(Español)**
 
 ---
 
