@@ -226,6 +226,7 @@ If you're serious about agentic AI engineering on GitHub — this list is your u
 - 📘 [GitHub Copilot Docs](https://docs.github.com/en/copilot) - Full documentation for GitHub Copilot, including agent mode, custom instructions, and workspace features.
 - 🔌 [GitHub Copilot Extensions](https://docs.github.com/en/copilot/building-copilot-extensions) - Build your own Copilot extensions. Perfect for practicing tool schemas and agent integration patterns.
 - ⚡ [GitHub Actions Docs](https://docs.github.com/en/actions) - Master the workflow engine that powers agent orchestration, CI/CD evals, and automated deployment.
+- 🧪 [Agent QA](https://github.com/vostride/agent-qa) - MCP-enabled web and mobile regression testing for software produced by coding agents; complements, but does not replace, agent-output or trajectory evaluation.
 
 ### 🎯 Hands-On Build Checklist
 
