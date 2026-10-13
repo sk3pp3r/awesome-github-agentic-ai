@@ -37,3 +37,7 @@ Thank you for taking the time to contribute! 🙌
 - Marketing pages or vendor landing pages
 - Broken or redirecting links
 - Content that duplicates what is already linked
+
+## Keeping the Site in Sync
+
+The GitHub Pages site in `docs/index.html` mirrors this README. When you add or remove a resource in `README.md`, make the same change in `docs/index.html`. Links in both files are checked automatically by the `Check links` workflow.
