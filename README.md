@@ -4,11 +4,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/sk3pp3r/awesome-github-agentic-ai?style=flat-square&logo=github&color=7c3aed)](https://github.com/sk3pp3r/awesome-github-agentic-ai/stargazers)
 [![License: CC0](https://img.shields.io/badge/License-CC0-green.svg?style=flat-square)](LICENSE)
-[![GH-600](https://img.shields.io/badge/Exam-GH--600-blueviolet?style=flat-square&logo=github)](https://learn.microsoft.com/credentials/certifications/github-copilot/)
-
-<p align="center">
-  <img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="GitHub Certified: Agentic AI Developer" width="140"/>
-</p>
+[![GH-600](https://img.shields.io/badge/Exam-GH--600-blueviolet?style=flat-square&logo=github)](https://learn.microsoft.com/credentials/certifications/agentic-ai-developer/)
 
 ---
 
@@ -31,7 +27,7 @@
 
 The **GitHub Certified: Agentic AI Developer** (exam code **GH-600**) is the next-generation certification proving you can design, build, evaluate, and operate **autonomous AI agents** deeply embedded in the GitHub software development lifecycle.
 
-This isn't your grandpa's chatbot cert. 😤 GH-600 covers the full agentic stack:
+GH-600 covers the full agentic stack:
 
 - 🏗️ Architecting agents with clear goals, boundaries, and tool access
 - ⚡ Implementing tool use, API integrations, and environment interaction
@@ -40,7 +36,7 @@ This isn't your grandpa's chatbot cert. 😤 GH-600 covers the full agentic stac
 - 🕸️ Orchestrating multi-agent systems with roles, contracts, and protocols
 - 🛡️ Enforcing guardrails, human-in-the-loop, audit logs, and compliance
 
-If you're serious about agentic AI engineering on GitHub — this list is your unfair advantage. 😎
+This list collects the official material plus the GitHub docs and community resources that map to each exam domain.
 
 ---
 
@@ -61,13 +57,13 @@ If you're serious about agentic AI engineering on GitHub — this list is your u
 
 ## 📚 Official Study Resources
 
-> Start here. No shortcuts.
+> Start here.
 
 - 🎯 [Microsoft Learn — GitHub Certifications Hub](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) - The mothership. All GitHub certs in one place.
-- 📋 [Exam GH-600 Page](https://learn.microsoft.com/credentials/certifications/exams/gh-600/) - Register, review skills measured, download the study guide.
-- 📖 [GH-600 Official Study Guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-600) - The definitive objective-by-objective breakdown. Read it twice.
+- 📋 [GitHub Certified: Agentic AI Developer](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/) - Official certification page with exam registration and skills measured.
+- 📖 [GH-600 Official Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) - Objective-by-objective breakdown of every skill measured.
 - 📣 [Microsoft Tech Community Announcement](https://techcommunity.microsoft.com/blog/skills-hub-blog/new-github-certified-agentic-ai-developer/4517571) - The official launch post with context on the exam.
-- 💬 [GitHub Community Discussions — GH-600](https://github.com/search?q=GH-600&type=discussions) - Real talk from folks prepping for the exam. Bookmark it.
+- 💬 [GitHub Community Discussions — GH-600](https://github.com/search?q=GH-600&type=discussions) - Discussions from people preparing for the exam.
 
 ---
 
@@ -77,14 +73,16 @@ If you're serious about agentic AI engineering on GitHub — this list is your u
 
 - 🎥 [Free 7-Video GH-600 Study Series](https://www.youtube.com/playlist?list=PLxgUmxsBhjMhyjJhNM9dxSCdJj2yExS2Y) - Official free video series with domain-by-domain coverage and practical explanations.
 - 🇪🇸 [GH-600 Apuntes en español (Matías Beltramone)](https://github.com/matiasbeltramone/gh-600-apuntes) - Free Spanish-language notes and study material covering the six GH-600 domains in accessible format.
-- 🧠 [GitHub Copilot Docs](https://docs.github.com/en/copilot) - Keep current with the tooling and workflows that underpin agentic development in GitHub.
-- 💼 [GitHub Blog — Copilot Tag](https://github.blog/tag/github-copilot/) - New product announcements, engineering blog posts, and architecture guidance relevant to agentic AI.
+- 🔌 [Model Context Protocol](https://modelcontextprotocol.io/) - Specification and guides for MCP, the tool protocol behind Domain 2 tool use and environment interaction.
+- 🧩 [Extend Copilot Chat with MCP](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/extend-copilot-chat-with-mcp) - How to connect MCP servers to Copilot and control which tools the agent can call.
+- 🤖 [Customize the Copilot Agent Environment](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment) - Configure `copilot-setup-steps.yml`, dependencies, and the sandbox the coding agent runs in.
+- 📝 [Repository Custom Instructions](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions) - Write `copilot-instructions.md` and `AGENTS.md` files that steer agent behavior per repository.
 
 ---
 
 ## 🎓 Microsoft Learn Modules (Self-Paced)
 
-> Free. Official. Exam-aligned. No excuses.
+> Free, official, and exam-aligned.
 
 - 🤖 [Foundations of Agentic AI in GitHub](https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/) - Core concepts: what agents are, how they reason, plan, and act within GitHub workflows.
 - 🏗️ [Designing Agent Architecture and SDLC Integration](https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/) - Covers Domain 1 deeply. Agent goals, task decomposition, and GitHub workflow integration.
@@ -94,7 +92,7 @@ If you're serious about agentic AI engineering on GitHub — this list is your u
 
 ## 📦 Domain Deep-Dives
 
-> Know your domains cold. Here's the full breakdown of what's actually tested.
+> What each exam domain tests.
 
 ---
 
@@ -232,12 +230,16 @@ If you're serious about agentic AI engineering on GitHub — this list is your u
 
 ## 🧰 Labs and Hands-On Practice
 
-> Theory is nice. Building stuff is how you actually learn. 😤
+> Build working artifacts for each domain.
 
 - 🎮 [GitHub Skills](https://skills.github.com/) - Interactive, repo-based learning tracks. Build real workflows, get automated feedback.
-- 📘 [GitHub Copilot Docs](https://docs.github.com/en/copilot) - Full documentation for GitHub Copilot, including agent mode, custom instructions, and workspace features.
-- 🔌 [GitHub Copilot Extensions](https://docs.github.com/en/copilot/building-copilot-extensions) - Build your own Copilot extensions. Perfect for practicing tool schemas and agent integration patterns.
+- 📘 [GitHub Copilot Docs](https://docs.github.com/en/copilot) - Full documentation for GitHub Copilot, including agent mode, custom instructions, and the coding agent.
+- 🔌 [GitHub MCP Server](https://github.com/github/github-mcp-server) - GitHub's official MCP server. Useful for studying real tool schemas and permission scoping.
 - ⚡ [GitHub Actions Docs](https://docs.github.com/en/actions) - Master the workflow engine that powers agent orchestration, CI/CD evals, and automated deployment.
+- 📊 [GitHub Models](https://docs.github.com/en/github-models) - Compare models and run prompt evaluations, including from GitHub Actions, for Domain 4.
+- 🔐 [OpenID Connect in GitHub Actions](https://docs.github.com/en/actions/concepts/security/openid-connect) - Short-lived cloud credentials instead of stored secrets for agent workflows.
+- 🛡️ [Repository Rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets) - Enforce reviews, status checks, and restrictions on what agent-authored changes can merge.
+- ✋ [Deployment Environments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments) - Required reviewers and protection rules for human-in-the-loop approval gates.
 - 🧪 [Agent QA](https://github.com/vostride/agent-qa) - MCP-enabled web and mobile regression testing for software produced by coding agents; complements, but does not replace, agent-output or trajectory evaluation.
 
 ### 🎯 Hands-On Build Checklist
@@ -255,7 +257,7 @@ Use the GH-600 study guide objective domains as your checklist. For each domain,
 
 ## 🌐 Community and Social
 
-> Don't study alone. The agentic AI community is loud, helpful, and building cool stuff. 🤝
+> Study with others preparing for the exam.
 
 - 🔴 [Reddit — r/AzureCertification GH-600 Thread](https://www.reddit.com/r/AzureCertification/comments/1td90hq/gh600_new_github_certified_agentic_ai_developer/) - Community discussion on the certification and prep strategies.
 - 💼 [LinkedIn — Microsoft Learn Announcement](https://www.linkedin.com/posts/microsoftlearn_were-introducing-a-new-github-certified-activity-7460713084647804928-_wqQ/) - Official launch post and community reactions.
@@ -263,15 +265,13 @@ Use the GH-600 study guide objective domains as your checklist. For each domain,
 - 📰 [GitHub Blog — Copilot Tag](https://github.blog/tag/github-copilot/) - Official GitHub engineering blog. Deep dives on Copilot features, agentic capabilities, and new integrations.
 - 📋 [GitHub Copilot Changelog](https://github.blog/changelog/label/copilot/) - Every Copilot feature release, documented. Stay current.
 - 💬 [GitHub Community Discussions](https://github.com/orgs/community/discussions) - The official GitHub community. Ask questions, share projects, find study partners.
-- 📗 [GH-600 Apuntes en español (Matías Beltramone)](https://github.com/matiasbeltramone/gh-600-apuntes) - Free, didactic Spanish-language study notes covering all six domains with hands-on guidance.
 
 ---
 
 ## 📺 Video Resources
 
-> Watch people build things. Then build things. 🎬
+> The Free 7-Video GH-600 Study Series is listed under New and Recent References above.
 
-- 🎬 [**Free 7-Video GH-600 Study Series**](https://www.youtube.com/playlist?list=PLxgUmxsBhjMhyjJhNM9dxSCdJj2yExS2Y) - **NEW!** Official free study series covering all six exam domains plus a hands-on approach.
 - ▶️ [YouTube — GitHub Copilot Agentic AI](https://www.youtube.com/results?search_query=GitHub+Copilot+agentic+AI+GH-600) - Search results for GH-600 and agentic AI content. New videos drop regularly.
 - 🎙️ [Microsoft Learn Shows — GitHub Copilot](https://learn.microsoft.com/en-us/shows/browse?terms=github+copilot) - Official Microsoft Learn video content. Structured, exam-relevant, free learning.
 
@@ -279,7 +279,7 @@ Use the GH-600 study guide objective domains as your checklist. For each domain,
 
 ## ✅ Best Starting Points
 
-> New here? Don't know where to begin? Here's your ordered attack plan. 😎
+> New here? Follow these steps in order.
 
 1. 📋 Read the Official Study Guide - Understand every objective before touching anything else.
 2. 🎓 Complete the 3 Microsoft Learn Modules - Official, exam-aligned, free. Build the mental model.
@@ -296,6 +296,5 @@ See [contributing.md](contributing.md) for guidelines on how to contribute to th
 ---
 
 <p align="center">
-  Built with 😎 for the GitHub Agentic AI community<br/>
-  <strong>Go build something that thinks for itself.</strong> 🤖
+  Built for the GitHub Agentic AI community.
 </p>
